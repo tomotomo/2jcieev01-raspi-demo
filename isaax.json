@@ -1,0 +1,11 @@
+{
+	"name": "2jcieev01-raspi-demo",
+	"version": "",
+	"description": "",
+	"author": "",
+	"license": "",
+	"language": "",
+	"scripts": {
+		"start": "python3 -u demo.py"
+	}
+}
