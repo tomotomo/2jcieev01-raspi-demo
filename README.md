@@ -32,6 +32,41 @@ $ sh baro.sh
 
 ### ambient demo
 
+#### install
+
+```bash
+pip3 install git+https://github.com/AmbientDataInc/ambient-python-lib.git
+```
+
+#### run
+
+Create a new channel.
+<https://ambidata.io/ch/channels.html>
+
 ```bash
 AMBIENT_CHANNEL_ID=00000 AMBIENT_WRITE_KEY=aaaaaaaa python3 demo.py
 ```
+
+### ambient demo with isaax
+
+#### install
+
+```
+sudo pip3 install git+https://github.com/AmbientDataInc/ambient-python-lib.git
+```
+
+#### clustor settings
+
+post-update
+
+```bash
+#!/bin/sh
+sh build.sh
+```
+
+ユーザー変数
+
+|名|変数タイプ|値|
+|---|---|---|
+|`AMBIENT_CHANNEL_ID`|数値||
+|`AMBIENT_WRITE_KEY`|文字列||
