@@ -33,9 +33,9 @@ if __name__ == '__main__':
             data = list(map(lambda str: str.strip(), out.split(',')))
             print(data)
 
-            # AmbientのAPI制限を回避するために10秒に1回の頻度でダータを送信
+            # AmbientのAPI制限を回避するために60秒に1回の頻度でダータを送信
             timestamp = datetime.now()
-            if (timestamp - last_uploaded).seconds > 10:
+            if (timestamp - last_uploaded).seconds > 60:
                 am.send({
                     "d1": data[0],
                     "d2": data[1],
