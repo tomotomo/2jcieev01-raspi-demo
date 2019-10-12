@@ -32,9 +32,9 @@ if __name__ == '__main__':
             # ['100154.6', '32.840', 'a463d4', '665d03', 'retun code: 0']
             data = list(map(lambda str: str.strip(), out.split(',')))
 
-            # AmbientのAPI制限を回避するために60秒に1回の頻度でダータを送信
+            # AmbientのAPI制限を回避するために300秒に1回の頻度でダータを送信
             timestamp = datetime.now()
-            if (timestamp - last_uploaded).seconds > 60:
+            if (timestamp - last_uploaded).seconds > 300:
                 am.send({
                     "d1": data[0],
                     "d2": data[1],
