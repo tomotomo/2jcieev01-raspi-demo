@@ -31,7 +31,6 @@ if __name__ == '__main__':
             # 例:
             # ['100154.6', '32.840', 'a463d4', '665d03', 'retun code: 0']
             data = list(map(lambda str: str.strip(), out.split(',')))
-            print(data)
 
             # AmbientのAPI制限を回避するために60秒に1回の頻度でダータを送信
             timestamp = datetime.now()
