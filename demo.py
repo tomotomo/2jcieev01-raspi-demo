@@ -34,7 +34,7 @@ if __name__ == '__main__':
 
             # AmbientのAPI制限を回避するために300秒に1回の頻度でダータを送信
             timestamp = datetime.now()
-            if (timestamp - last_uploaded).seconds > 300:
+            if (timestamp - last_uploaded).seconds > 10:
                 am.send({
                     "d1": data[0],
                     "d2": data[1],
